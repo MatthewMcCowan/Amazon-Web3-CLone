@@ -1,0 +1,29 @@
+@import "~antd/dist/antd.css";
+
+.ant-page-header {
+  background-color: #131921;
+}
+
+.ant-page-header-heading {
+  display: flex;
+  justify-content: left;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.searchBar {
+  margin-top: 4px;
+  width: calc(100vw - 550px);
+}
+
+.ant-input-search-button {
+  background-color: #fdb13f;
+  border-color: #fdb13f;
+}
+
+.ant-input-search-button:hover {
+  background-color: #ff9900;
+  border-color: #ff9900;
+  cursor: pointer;
+}
