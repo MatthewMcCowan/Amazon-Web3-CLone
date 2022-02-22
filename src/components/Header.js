@@ -17,7 +17,7 @@ const categories = [
   "Adventure",
 ];
 const Header = () => {
-  //const { authenticate } = useMoralis();
+  const { authenticate, account } = useMoralis();
   return (
     <div className="site-page-header-ghost-wrapper">
       <PageHeader
@@ -38,9 +38,13 @@ const Header = () => {
               className="login"
               key="1"
               type="primary"
-              //onClick={() => authenticate()}
+              onClick={() => authenticate()}
             >
-              Login
+              {account ? (
+                <span>{account.slice(0, 5)}</span>
+              ) : (
+                <span>Login</span>
+              )}
             </Button>
             <Space size={"large"}>
               <Badge count={0} showZero>
